@@ -4,6 +4,4 @@ pandas
 numpy
 scikit-learn
 pymongo
-certifi 
-
-# -e .
+certifi
