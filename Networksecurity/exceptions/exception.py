@@ -23,7 +23,7 @@ if __name__=='__main__':
     try:
         logger.logging.info("Enter the try Block")
         a = 1/0
-        print("This will not be printed")
+        print("This will not be printed",a)
 
     except Exception as e:
         raise NetworkSecurityException(e,sys)
