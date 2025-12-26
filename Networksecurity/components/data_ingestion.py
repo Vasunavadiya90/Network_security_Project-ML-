@@ -60,7 +60,7 @@ class DataIngestion:
                 dataframe.to_csv(feature_store_file_path,index  = False , header = True)
                 return dataframe
         except Exception as e:
-            NetworkSecurityException(e,sys)
+            raise NetworkSecurityException(e,sys)
 
 
     def split_data_as_train_test(self,dataframe:pd.DataFrame)->None:
@@ -81,7 +81,7 @@ class DataIngestion:
             logging.info(f"exported train and testing files")
 
         except Exception as e:
-            NetworkSecurityException(e,sys)
+            raise NetworkSecurityException(e,sys)
 
         
     def initiate_data_ingestion(self):
@@ -92,6 +92,7 @@ class DataIngestion:
 
             dataingestionartifact = DataIngestionArtifact(trained_file_path = self.data_ingestion_config.training_file_path,
                                                             test_file_path = self.data_ingestion_config.testing_file_path)
+            return dataingestionartifact
         except Exception as e:
             raise NetworkSecurityException(e,sys)
         

@@ -17,6 +17,7 @@ FILE_NAME:str = "phisingData.csv"
 TRAIN_FILE_NAME:str = "train.csv"
 TEST_FILE_NAME:str = "test.csv"
 
+SCHEMA_FILE_PATH = os.path.join(os.getcwd(), "data_schema", "schema.yaml") 
 
 """  
 Data ingestion related constant start with DATA_INGESTION VAR NAME
@@ -30,9 +31,16 @@ DATA_INGESTION_TRAIN_TEST_SPLIT_RATION:float = 0.2
 
 
 
+"""  
+Data_validation related constant : start with DATA_VALIDATION VAR NAME
+"""
 
+DATA_VALIDATION_DIR_NAME:str = "data_validation"
+DATA_VALIDATION_VALID_DIR:str = "validatd"
+DATA_VALIDATION_INVALID_DIR:str = "invalidated"
+DATA_VALIDATION_DRIFT_REPORT_DIR:str  = "drift_report"
+DATA_VALIDATION_DRIFT_REPORT_FILL_NAME:str = "report.yaml"
 
-
-
+PREPROCESSING_OBJECT_FILE_NAME:str  = "preprocessing.pkl"
 
 
