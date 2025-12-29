@@ -70,9 +70,6 @@ class DataValidation:
                 os.makedirs(dir_name,exist_ok=True)
                 write_yaml_file(file_path = drift_report_file_path, content = report)
 
-
-
-
         except Exception as e:
             raise NetworkSecurityException(e,sys)
 
@@ -83,7 +80,7 @@ class DataValidation:
             test_file_path=self.data_ingestion_artifact.test_file_path
 
 
-            ## read the data from train and test
+            ## read the data from train and test 
             train_dataframe = DataValidation.read_data(train_file_path)
             test_dataframe = DataValidation.read_data(test_file_path)
 

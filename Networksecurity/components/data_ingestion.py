@@ -12,6 +12,8 @@ import numpy as np
 from typing import List
 from sklearn.model_selection import train_test_split
 import pymongo
+from pymongo.server_api import ServerApi
+import certifi
 from networksecurity.entity.artifact_entity import DataIngestionArtifact
 from dotenv import load_dotenv
 load_dotenv()
@@ -34,7 +36,14 @@ class DataIngestion:
         try:
             database_name = self.data_ingestion_config.database_name
             collection_name = self.data_ingestion_config.collection_name
-            self.mongo_client = pymongo.MongoClient(MONGO_DB_URL)
+            self.mongo_client = pymongo.MongoClient(
+                MONGO_DB_URL, 
+                server_api=ServerApi('1'),
+                tlsInsecure=True,
+                serverSelectionTimeoutMS=10000,
+                connectTimeoutMS=10000,
+                retryWrites=False
+            )
             collection = self.mongo_client[database_name][collection_name]
 
             df = pd.DataFrame(list(collection.find()))
