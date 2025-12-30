@@ -1,6 +1,0 @@
-[ 2025-12-30 14:59:00,261 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2025-12-30 14:59:00,268 ] 107 dagshub - INFO - Accessing as Vasunavadiya90
-[ 2025-12-30 14:59:01,501 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Vasunavadiya90/Network_security_Project-ML- "HTTP/1.1 200 OK"
-[ 2025-12-30 14:59:02,836 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2025-12-30 14:59:02,838 ] 107 dagshub - INFO - Initialized MLflow to track repo "Vasunavadiya90/Network_security_Project-ML-"
-[ 2025-12-30 14:59:02,839 ] 107 dagshub - INFO - Repository Vasunavadiya90/Network_security_Project-ML- initialized!
