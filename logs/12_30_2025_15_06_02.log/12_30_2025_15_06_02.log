@@ -1,0 +1,30 @@
+[ 2025-12-30 15:06:09,533 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-12-30 15:06:09,542 ] 107 dagshub - INFO - Accessing as Vasunavadiya90
+[ 2025-12-30 15:06:12,260 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Vasunavadiya90/Network_security_Project-ML- "HTTP/1.1 200 OK"
+[ 2025-12-30 15:06:13,946 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-12-30 15:06:13,952 ] 107 dagshub - INFO - Initialized MLflow to track repo "Vasunavadiya90/Network_security_Project-ML-"
+[ 2025-12-30 15:06:13,959 ] 107 dagshub - INFO - Repository Vasunavadiya90/Network_security_Project-ML- initialized!
+[ 2025-12-30 15:06:47,346 ] 44 root - INFO - Start data Ingestion
+[ 2025-12-30 15:06:49,811 ] 71 root - INFO - performed train test split on the dataframe
+[ 2025-12-30 15:06:49,811 ] 72 root - INFO - Excited split_data_as_train_test_split method of data_ingestion class
+[ 2025-12-30 15:06:49,812 ] 77 root - INFO - exporting training and testing file path.
+[ 2025-12-30 15:06:49,933 ] 81 root - INFO - exported train and testing files
+[ 2025-12-30 15:06:49,933 ] 47 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\12_30_2025_15_15_03\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\12_30_2025_15_15_03\\data_ingestion\\ingested\\test.csv')
+[ 2025-12-30 15:06:49,941 ] 57 root - INFO - Initiate the data Validation
+[ 2025-12-30 15:06:50,061 ] 39 root - INFO - Required Number of columns: 31
+[ 2025-12-30 15:06:50,061 ] 40 root - INFO - Data frame has columns: 32
+[ 2025-12-30 15:06:50,061 ] 39 root - INFO - Required Number of columns: 31
+[ 2025-12-30 15:06:50,061 ] 40 root - INFO - Data frame has columns: 32
+[ 2025-12-30 15:06:50,853 ] 59 root - INFO - We entered the block of Data transformation inside the class method
+[ 2025-12-30 15:06:50,853 ] 61 root - INFO - Starting the Data transformation
+[ 2025-12-30 15:06:50,922 ] 47 root - INFO - Enneterd get_data_transformer object method of transformer class
+[ 2025-12-30 15:06:50,927 ] 51 root - INFO - we initialize the KNNimputer with KNNImputer(n_neighbors=3)
+[ 2025-12-30 15:06:50,964 ] 57 root - INFO - Entered the save Object method method of the Mainutils class
+[ 2025-12-30 15:06:50,972 ] 61 root - INFO - Excited the save Object method of mainutils class 
+[ 2025-12-30 15:06:50,973 ] 57 root - INFO - Entered the save Object method method of the Mainutils class
+[ 2025-12-30 15:06:50,986 ] 61 root - INFO - Excited the save Object method of mainutils class 
+[ 2025-12-30 15:07:25,314 ] 57 root - INFO - Entered the save Object method method of the Mainutils class
+[ 2025-12-30 15:07:25,315 ] 61 root - INFO - Excited the save Object method of mainutils class 
+[ 2025-12-30 15:07:25,315 ] 57 root - INFO - Entered the save Object method method of the Mainutils class
+[ 2025-12-30 15:07:25,316 ] 61 root - INFO - Excited the save Object method of mainutils class 
+[ 2025-12-30 15:07:25,316 ] 134 root - INFO - Model Trainer Artifact ModelTrainerArtifact(trained_model_file_path='Artifacts\\12_30_2025_15_15_03\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=classsificationMetricsArtifact(f1_score=1.0, precision_score=1.0, recall_score=1.0), test_metric_artifact=classsificationMetricsArtifact(f1_score=0.9593360995850623, precision_score=0.9561621174524401, recall_score=0.9625312239800167))

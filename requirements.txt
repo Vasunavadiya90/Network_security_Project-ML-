@@ -9,5 +9,9 @@ pyaml
 dill
 mlflow
 scipy
- 
+dagshub
+Fastapi
+uvicorn
+CORSMiddleware
+
 # -e .
